@@ -6,7 +6,7 @@ add_executable(UserApi
     main.cpp
     routes/user_routes.cpp
     controllers/user_controller.cpp
-    database/db.cpp
+    database/DBManager.cpp
 )
 
-include_directories(include routes controllers models database config)
+include_directories(include routes controllers models database)
