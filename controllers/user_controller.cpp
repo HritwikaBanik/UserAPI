@@ -1,5 +1,5 @@
-#include "database/DBManager.hpp"
-#include "models/user.hpp"
+#include "DBManager.hpp"
+#include "user.hpp"
 #include "json.hpp"
 #include <sqlite3.h>
 #include <sstream>
