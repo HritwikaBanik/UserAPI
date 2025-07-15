@@ -10,10 +10,10 @@ add_executable(UserApi
 )
 
 include_directories(
-    include
-    routes
-    controllers
-    models
-    database
+    ${CMAKE_SOURCE_DIR}/include
+    ${CMAKE_SOURCE_DIR}/routes
+    ${CMAKE_SOURCE_DIR}/controllers
+    ${CMAKE_SOURCE_DIR}/models
+    ${CMAKE_SOURCE_DIR}/database
 )
 
