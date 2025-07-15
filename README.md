@@ -7,31 +7,53 @@ A simple RESTful API project built using C++ with the Crow framework, MySQL (or 
 
 ## 📁 Project Structure
 
-UserAPI/
-├── CMakeLists.txt          ← Build config for your project
-├── main.cpp                ← Entry point, starts server and routes
+<details>
+  <summary><strong>UserAPI/</strong></summary>
 
-├── routes/
-│   ├── user_routes.cpp     ← All user-related API routes
-│   └── user_routes.hpp
+  - **CMakeLists.txt** – Build config for your project  
+  - **main.cpp** – Entry point, starts server and routes
 
-├── controllers/
-│   ├── user_controller.cpp ← Logic: Fetch/add users, call DB, return response
-│   └── user_controller.hpp
+  <details>
+    <summary><strong>routes/</strong></summary>
 
-├── models/
-│   └── user.hpp            ← User struct (like POJO)
+  - `user_routes.cpp` – All user-related API routes  
+  - `user_routes.hpp`
+  </details>
 
-├── database/
-│   ├── db.cpp              ← DB connection and queries (MySQL/SQLite)
-│   └── db.hpp
+  <details>
+    <summary><strong>controllers/</strong></summary>
 
-├── include/                ← External libraries (if not using package manager)
-│   ├── crow_all.h
-│   └── json.hpp
+  - `user_controller.cpp` – Logic: Fetch/add users, call DB, return response  
+  - `user_controller.hpp`
+  </details>
 
-└── config/
-    └── config.hpp          ← DB credentials and configs
+  <details>
+    <summary><strong>models/</strong></summary>
+
+  - `user.hpp` – User struct (like POJO)
+  </details>
+
+  <details>
+    <summary><strong>database/</strong></summary>
+
+  - `db.cpp` – DB connection and queries (MySQL/SQLite)  
+  - `db.hpp`
+  </details>
+
+  <details>
+    <summary><strong>include/</strong></summary>
+
+  - `crow_all.h`  
+  - `json.hpp`
+  </details>
+
+  <details>
+    <summary><strong>config/</strong></summary>
+
+  - `config.hpp` – DB credentials and configs
+  </details>
+
+</details>
 
 
 
