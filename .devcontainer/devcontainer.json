@@ -1,0 +1,9 @@
+{
+  "name": "C++ API Dev",
+  "image": "mcr.microsoft.com/devcontainers/cpp:ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/cmake:1": {},
+    "ghcr.io/devcontainers/features/sqlite:1": {}
+  },
+  "postCreateCommand": "cmake -S . -B build && cmake --build build"
+}
