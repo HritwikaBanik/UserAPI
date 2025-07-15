@@ -12,8 +12,26 @@ bool DBManager::connect(const std::string& dbFile) {
         return false;
     }
     std::cout << "Database connected.\n";
+
+    // ✅ Create users table if it doesn't exist
+    const char* createUsersTableQuery = R"(
+        CREATE TABLE IF NOT EXISTS users (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            email TEXT NOT NULL
+        );
+    )";
+
+    char* errMsg = nullptr;
+    if (sqlite3_exec(db, createUsersTableQuery, nullptr, nullptr, &errMsg) != SQLITE_OK) {
+        std::cerr << "Table creation failed: " << errMsg << "\n";
+        sqlite3_free(errMsg);
+        return false;
+    }
+
     return true;
 }
+
 
 void DBManager::close() {
     if (db) {
