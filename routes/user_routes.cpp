@@ -15,7 +15,8 @@ void setupUserRoutes(crow::SimpleApp& app) {
         if (!allowedTables.count(table)) {
             return crow::response(400, "Invalid table name");
         }
-        return getAllFromTable(table);
+        return crow::response(getAllFromTable(table));
+
     });
 
     CROW_ROUTE(app, "/api/<string>").methods("POST"_method)
@@ -24,6 +25,7 @@ void setupUserRoutes(crow::SimpleApp& app) {
             return crow::response(400, "Invalid table name");
         }
         json body = json::parse(req.body);
-        return insertIntoTable(table, body);
+        return crow::response(insertIntoTable(table, body));
+
     });
 }
