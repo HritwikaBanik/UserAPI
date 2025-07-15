@@ -1,5 +1,5 @@
 #include "user_routes.hpp"
-#include "controllers/user_controller.hpp"
+#include "user_controller.hpp"
 #include "json.hpp"
 #include <unordered_set>
 
