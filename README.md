@@ -60,12 +60,18 @@ A simple RESTful API project built using C++ with the Crow framework, MySQL (or 
 
 ---
 
-## ✅ Features
+<h2>✅ Features</h2>
 
-- RESTful API with Crow (C++)
-- JSON request/response handling
-- Database connection with MySQL or SQLite
-- Simple project structure for learning and extension
+<p>A lightweight, modular C++ API designed for learning and extensibility:</p>
+
+<ul>
+  <li>🔗 <strong>RESTful API</strong> built with <a href="https://github.com/CrowCpp/crow" target="_blank">Crow</a> – a fast and expressive C++ microframework</li>
+  <li>📦 <strong>JSON-based request &amp; response handling</strong> with clean, readable structures</li>
+  <li>🗄️ <strong>Database connectivity</strong> using <code>MySQL</code> or <code>SQLite</code> – choose what suits your use case</li>
+  <li>🧱 <strong>Modular project structure</strong> that separates routes, controllers, models, and DB logic for easy scaling</li>
+  <li>🚀 <strong>Minimal setup</strong> — ideal for C++ developers exploring web development and backend design</li>
+  <li>🛠️ Designed to be <strong>easily extendable</strong> for features like authentication, file uploads, and more</li>
+</ul>
 
 ---
 
