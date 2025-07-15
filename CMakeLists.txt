@@ -9,4 +9,11 @@ add_executable(UserApi
     database/DBManager.cpp
 )
 
-include_directories(include routes controllers models database)
+include_directories(
+    include
+    routes
+    controllers
+    models
+    database
+)
+
