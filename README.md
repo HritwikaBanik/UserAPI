@@ -7,43 +7,71 @@ A simple RESTful API project built using C++ with the Crow framework, MySQL (or 
 
 ## 📁 Project Structure
 
-UserAPI/
-├── CMakeLists.txt          ← Build config for your project
-├── main.cpp                ← Entry point, starts server and routes
+<details>
+  <summary><strong>UserAPI/</strong></summary>
 
-├── routes/
-│   ├── user_routes.cpp     ← All user-related API routes
-│   └── user_routes.hpp
+  - **CMakeLists.txt** – Build config for your project  
+  - **main.cpp** – Entry point, starts server and routes
 
-├── controllers/
-│   ├── user_controller.cpp ← Logic: Fetch/add users, call DB, return response
-│   └── user_controller.hpp
+  <details>
+    <summary><strong>routes/</strong></summary>
 
-├── models/
-│   └── user.hpp            ← User struct (like POJO)
+  - `user_routes.cpp` – All user-related API routes  
+  - `user_routes.hpp`
+  </details>
 
-├── database/
-│   ├── db.cpp              ← DB connection and queries (MySQL/SQLite)
-│   └── db.hpp
+  <details>
+    <summary><strong>controllers/</strong></summary>
 
-├── include/                ← External libraries (if not using package manager)
-│   ├── crow_all.h
-│   └── json.hpp
+  - `user_controller.cpp` – Logic: Fetch/add users, call DB, return response  
+  - `user_controller.hpp`
+  </details>
 
-└── config/
-    └── config.hpp          ← DB credentials and configs
+  <details>
+    <summary><strong>models/</strong></summary>
+
+  - `user.hpp` – User struct (like POJO)
+  </details>
+
+  <details>
+    <summary><strong>database/</strong></summary>
+
+  - `db.cpp` – DB connection and queries (MySQL/SQLite)  
+  - `db.hpp`
+  </details>
+
+  <details>
+    <summary><strong>include/</strong></summary>
+
+  - `crow_all.h`  
+  - `json.hpp`
+  </details>
+
+  <details>
+    <summary><strong>config/</strong></summary>
+
+  - `config.hpp` – DB credentials and configs
+  </details>
+
+</details>
 
 
 
 
 ---
 
-## ✅ Features
+<h2>✅ Features</h2>
 
-- RESTful API with Crow (C++)
-- JSON request/response handling
-- Database connection with MySQL or SQLite
-- Simple project structure for learning and extension
+<p>A lightweight, modular C++ API designed for learning and extensibility:</p>
+
+<ul>
+  <li>🔗 <strong>RESTful API</strong> built with <a href="https://github.com/CrowCpp/crow" target="_blank">Crow</a> – a fast and expressive C++ microframework</li>
+  <li>📦 <strong>JSON-based request &amp; response handling</strong> with clean, readable structures</li>
+  <li>🗄️ <strong>Database connectivity</strong> using <code>MySQL</code> or <code>SQLite</code> – choose what suits your use case</li>
+  <li>🧱 <strong>Modular project structure</strong> that separates routes, controllers, models, and DB logic for easy scaling</li>
+  <li>🚀 <strong>Minimal setup</strong> — ideal for C++ developers exploring web development and backend design</li>
+  <li>🛠️ Designed to be <strong>easily extendable</strong> for features like authentication, file uploads, and more</li>
+</ul>
 
 ---
 
